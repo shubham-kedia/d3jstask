@@ -19,6 +19,9 @@ jQuery(document).ready(function($) {
        }
 
      });
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
   function renderCarousel(){
     var widths =$(document).width();
     var front=400;

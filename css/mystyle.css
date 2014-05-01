@@ -130,7 +130,8 @@ a:hover {
 .footer .links a:hover {
   color: #56bc94;
 }
-
+/*footer ends here*/
+/*general css*/
 .h2-lines{
 	margin-top: 10px;
 	background-color:black;
@@ -156,6 +157,13 @@ a:hover {
 .create.padding{
   padding-top:50px;
 }
+.tab-pane .content,.content1{
+  padding-top: 15px;
+}
+.content1{
+  line-height: 30px;
+}
+/*chart and graphs css*/
 #barchart1,#barchart2{
   margin-left: -45px;
   margin-top: 20px;
@@ -170,6 +178,7 @@ a:hover {
   margin-top: 40px;
   margin-left: 30px;
 }
+/*media queries */
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .container{

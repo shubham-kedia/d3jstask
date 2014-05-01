@@ -188,12 +188,18 @@
 	background-image :url(../js/gradient.svg);
 }
 @media (max-width: 767px) {
+	body{
+		overflow-x: hidden;
+	}
   .carousel{
     width: 640px;
   }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	body{
+		overflow-x: hidden;
+	}	
   .carousel{
     width: 740px;
   }

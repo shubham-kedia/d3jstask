@@ -1,4 +1,4 @@
-var w = $('#mypie').width(), //width
+var w = $('#mypie').width()-10, //width
 h = 500, //height
 r = 200, //radius
 color = d3.scale.category20c(); //builtin range of colors

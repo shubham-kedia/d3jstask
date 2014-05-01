@@ -2,6 +2,8 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #444444;
+  background :#F3F3F3;
+  margin-top :70px;
 }
 a {
   color: #56bc94;
@@ -26,7 +28,7 @@ a:hover {
   box-shadow: none;
 }
 .offset-header {
-    padding-top: 90px;
+  padding-top: 90px;
 }
 /*header css finishes here*/
 /* Header */
@@ -127,9 +129,7 @@ a:hover {
 .footer .links a:hover {
   color: #56bc94;
 }
-.container{
-	width: 940px;
-}
+
 .h2-lines{
 	margin-top: 10px;
 	background-color:black;
@@ -151,4 +151,34 @@ a:hover {
 .input-append{
 	width: 46%;
 	right: 20px;
+}
+.create.padding{
+  padding-top:50px;
+}
+#barchart1{
+  margin-left: -45px;
+}
+#multilinechart{
+  margin-left: 30px;
+}
+#mypie{
+  margin-left: 30px;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .container{
+    /*width: 700px;*/
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container{
+    /*width: 740px;*/
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container{
+    width: 940px;
+  }
 }

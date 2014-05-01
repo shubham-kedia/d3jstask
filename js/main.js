@@ -19,23 +19,30 @@ jQuery(document).ready(function($) {
        }
 
      });
-  var widths =$(document).width();
-  var front=400;
-  if (widths>992) {
-    widths = 910;
-    front-= 20;
-    $(".carousel").css("width", widths);
-  }else if (widths<=992 && width>=767) {
-    widths= 740;
-    front-= 40;
-    $(".carousel").css("width", widths);
-  }else if (widths<767) {
-    widths =$(document).width()-20;
-    front-= 60;
-    $(".carousel").css("width", widths);
-  };
-  $('.carousel').carousel(
-    {carouselWidth:widths,carouselHeight:300,directionNav:false,shadow:true,buttonNav:'bullets',frontWidth:front,frontHeight:300
+  function renderCarousel(){
+    var widths =$(document).width();
+    var front=400;
+    if (widths>992) {
+      widths = 910;
+      // front-= 40;
+      $(".carousel").css("width", widths);
+    }else if (widths<=992 && width>=767) {
+      widths= 740;
+      front-= 60;
+      $(".carousel").css("width", widths);
+    }else if (widths<767) {
+      widths =$(document).width()-20;
+      front-= 80;
+      $(".carousel").css("width", widths);
+    };
+    $('.carousel').carousel(
+      {carouselWidth:widths,carouselHeight:300,directionNav:false,shadow:true,buttonNav:'bullets',frontWidth:front,frontHeight:300
+    });
+  }
+  renderCarousel();
+  $( window ).resize(function() {
+    // $("#mypie").empty();
+    renderCarousel();
   });
   $(function() {
     $('#datetimepicker1').datetimepicker({

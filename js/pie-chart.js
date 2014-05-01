@@ -1,7 +1,7 @@
 $(document).ready(function(){
   function renderPie() {
 var w = $('#mypie').width(), //width
-h = 500, //height
+h = w+10, //height
 r = w/2, //radius
 color = d3.scale.category20c(); //builtin range of colors
  

@@ -1,6 +1,8 @@
-var w = $('#mypie').width()-10, //width
+$(document).ready(function(){
+  function renderPie() {
+var w = $('#mypie').width(), //width
 h = 500, //height
-r = 200, //radius
+r = w/2, //radius
 color = d3.scale.category20c(); //builtin range of colors
  
 data = [{"label":"one", "value":20},
@@ -40,3 +42,10 @@ return "translate(" + arc.centroid(d) + ")"; //this gives us a pair of coordinat
 })
 .attr("text-anchor", "middle") //center the text on it's origin
 .text(function(d, i) { return data[i].label; }); //get the label from our original data array
+}
+renderPie();
+$( window ).resize(function() {
+  $("#mypie").empty();
+  renderPie();
+});
+});

@@ -19,17 +19,6 @@ jQuery(document).ready(function($) {
        }
 
      });
-
-});
-$(function() {
-  $('#datetimepicker1').datetimepicker({
-    pickTime: false
-        // format: 'dd/MM/yyyy '
-      });
-});
-
-$(document).ready(function()
-{
   var widths =$(document).width();
   var front=400;
   if (widths>992) {
@@ -47,5 +36,11 @@ $(document).ready(function()
   };
   $('.carousel').carousel(
     {carouselWidth:widths,carouselHeight:300,directionNav:false,shadow:true,buttonNav:'bullets',frontWidth:front,frontHeight:300
+  });
+  $(function() {
+    $('#datetimepicker1').datetimepicker({
+      pickTime: false
+        // format: 'dd/MM/yyyy '
+      });
   });
 });

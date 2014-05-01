@@ -155,13 +155,18 @@ a:hover {
 .create.padding{
   padding-top:50px;
 }
-#barchart1{
+#barchart1,#barchart2{
   margin-left: -45px;
+  margin-top: 20px;
+}
+#barchart2{
+  margin-top: 40px;
 }
 #multilinechart{
   margin-left: 30px;
 }
 #mypie{
+  margin-top: 40px;
   margin-left: 30px;
 }
 /* Extra small devices (phones, less than 768px) */
